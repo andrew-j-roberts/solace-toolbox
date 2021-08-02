@@ -1,12 +1,10 @@
-_Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)_
-
----
-
 # Solace Toolbox (WIP)
 
 This tool is a browser based mashup of [JMSToolBox](https://github.com/jmstoolbox/jmstoolbox) and [PubSub+ Broker Manager](https://docs.solace.com/Solace-PubSub-Manager/PubSub-Manager-Overview.htm) that lets you browse queues and create and run event simulators.
 
 ## Public URL
+
+[https://github.com/andrew-j-roberts/solace-toolbox](https://github.com/andrew-j-roberts/solace-toolbox)
 
 ## Running locally
 
