@@ -1,10 +1,10 @@
 import svelte from "rollup-plugin-svelte";
-import sveltePreprocess from "svelte-preprocess";
-import typescript from "@rollup/plugin-typescript";
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
+import sveltePreprocess from "svelte-preprocess";
+import typescript from "@rollup/plugin-typescript";
 import css from "rollup-plugin-css-only";
 
 const production = !process.env.ROLLUP_WATCH;
@@ -40,12 +40,16 @@ export default {
   },
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({ sourceMap: !production }),
+      preprocess: sveltePreprocess({
+        sourceMap: !production,
+        postcss: {
+          plugins: [require("tailwindcss"), require("autoprefixer")],
+        },
+      }),
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,
       },
-      preprocess: sveltePreprocess({ postcss: true }),
     }),
     // we'll extract any component CSS out into
     // a separate file - better for performance

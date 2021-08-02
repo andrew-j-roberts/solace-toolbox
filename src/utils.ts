@@ -58,10 +58,10 @@ export function getCurrentTimeHHMMSS() {
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
   let ampm = hours >= 12 ? "pm" : "am";
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  let strTime = hours + ":" + minutes + ":" + seconds + " " + ampm;
+  let formattedHours = hours % 12;
+  let formattedHours12 = formattedHours ? formattedHours : 12; // the hour '0' should be '12'
+  let formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
+  let strTime = `${formattedHours12 + ":" + formattedMinutes + ":" + seconds + " " + ampm}`;
   return strTime;
 }
 
