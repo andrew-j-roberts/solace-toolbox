@@ -6,7 +6,7 @@
     "tailwind:dev": "NODE_ENV=development postcss ./src/tailwind.css -o ./public/tailwind.css -w",
     "tailwind:build": "NODE_ENV=production postcss ./src/tailwind.css -o ./public/tailwind.css",
     "svelte:dev": "rollup -c -w",
-    "svelte:build": "rollup -c",
+    "build": "rollup -c",
     "dev": "run-p tailwind:dev svelte:dev",
     "start": "sirv public --no-clear",
     "validate": "svelte-check"
