@@ -6,7 +6,7 @@ This tool is a browser based mashup of [JMSToolBox](https://github.com/jmstoolbo
 
 ## Public URL
 
-[https://github.com/andrew-j-roberts/solace-toolbox](https://github.com/andrew-j-roberts/solace-toolbox)
+[https://solace-toolbox.netlify.app/](https://solace-toolbox.netlify.app/)
 
 ## Running locally
 
