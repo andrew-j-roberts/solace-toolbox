@@ -2,6 +2,8 @@
 
 This tool is a browser based mashup of [JMSToolBox](https://github.com/jmstoolbox/jmstoolbox) and [PubSub+ Broker Manager](https://docs.solace.com/Solace-PubSub-Manager/PubSub-Manager-Overview.htm) that lets you browse queues and create and run event simulators.
 
+<img width="961" alt="2021-08-02_15-56-04" src="https://user-images.githubusercontent.com/46111212/127916366-33fe9e03-5c1c-43ac-b214-28a6cebdced9.png">
+
 ## Public URL
 
 [https://github.com/andrew-j-roberts/solace-toolbox](https://github.com/andrew-j-roberts/solace-toolbox)
